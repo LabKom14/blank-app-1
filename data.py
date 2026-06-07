@@ -479,3 +479,4 @@ compounds_data = [
         "msds": {"link": "https://drive.google.com/file/d/1zDKvitDmHSk3odA_vbybQFNy4whx_rpE/view?usp=drive_link"},
     },
 ]
+]
