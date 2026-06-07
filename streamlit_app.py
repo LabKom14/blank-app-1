@@ -541,7 +541,6 @@ def main():
             )
             st.markdown(html_content, unsafe_allow_html=True)
        
-
     # 4. Alur Tampilan Hasil Pencarian (Jika query pencarian terisi)
     else:
         # Terapkan gaya visual CSS khusus untuk halaman hasil pencarian
