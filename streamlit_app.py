@@ -495,16 +495,17 @@ def main():
                 label_visibility="collapsed",
             )
 
-        # Tampilkan informasi jumlah total zat kimia yang terdaftar
-        st.markdown(
-            '<p style="'
-            "font-family:'Hanken Grotesk',sans-serif;"
-            'font-size:13px;color:rgba(255,255,255,0.8);'
-            'margin:10px 0 0 0;text-align:center;'
-            '"><strong style="color:#fff;font-weight:600">'
-            + str(len(compounds_data))
-            + "</strong> zat kimia tersedia</p>",
-            '<div style="display: inline-block; text-align: left; margin-top: 15px; width: 330px;">'
+     # Tampilkan informasi jumlah total zat kimia yang terdaftar
+            html_content = (
+                '<div style="display: flex; flex-direction: column; align-items: center; width: 100%;">'
+                '<p style="'
+                "font-family:'Hanken Grotesk',sans-serif;"
+                'font-size:15px;color:rgba(255,255,255,0.85);'
+                'margin:4px 0 0 0;text-align:center;'
+                '"><strong style="color:#fff;font-weight:600">'
+                + str(len(compounds_data))
+                + "</strong> zat kimia tersedia</p>"
+                '<div style="display: inline-block; text-align: left; margin-top: 15px; width: 330px;">'
                 '<p style="'
                 "font-family:'Hanken Grotesk',sans-serif;"
                 'font-size:15px;color:rgba(255,255,255,0.85);'
@@ -540,7 +541,7 @@ def main():
                 '</div>'
             )
             st.markdown(html_content, unsafe_allow_html=True)
-       
+
     # 4. Alur Tampilan Hasil Pencarian (Jika query pencarian terisi)
     else:
         # Terapkan gaya visual CSS khusus untuk halaman hasil pencarian
